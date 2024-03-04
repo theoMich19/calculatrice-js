@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div>
+      <button id="toggleDarkMode">Mode sombre</button>
+      <div id="container">
+        <div id="calculator">
+          <input type="text" id="result" readonly />
+          <div class="row">
+            <button class="button" onclick="press('1')">1</button>
+            <button class="button" onclick="press('2')">2</button>
+            <button class="button" onclick="press('3')">3</button>
+            <button class="button special" onclick="press('+')">+</button>
+          </div>
+          <div class="row">
+            <button class="button" onclick="press('4')">4</button>
+            <button class="button" onclick="press('5')">5</button>
+            <button class="button" onclick="press('6')">6</button>
+            <button class="button special" onclick="press('-')">-</button>
+          </div>
+          <div class="row">
+            <button class="button" onclick="press('7')">7</button>
+            <button class="button" onclick="press('8')">8</button>
+            <button class="button" onclick="press('9')">9</button>
+            <button class="button special" onclick="press('*')">*</button>
+          </div>
+          <div class="row">
+            <button class="button special" onclick="press('C')">C</button>
+            <button class="button" onclick="press('0')">0</button>
+            <button class="button special" onclick="press('=')">=</button>
+            <button class="button special" onclick="press('/')">/</button>
+          </div>
+        </div>
+        <div id="history-container">
+          <h3>Historique</h3>
+          <div id="history"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
